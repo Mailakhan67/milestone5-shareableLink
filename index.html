@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Unique Path And Shareable By Shumaila Ameen</h1>
+  <form id="resumeForm"   action="">
+    <!-- 1st fieldset , Personal information -->
+<fieldset>
+  <legend>Personal Information</legend>
+  <label for="cvname">
+CV URL:
+  </label>
+  <input type="text" id="cvname" name="cvname" required> <br>
+  
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="last-name">Last Name</label>
+  <input type="text" id="last-name" name="last-name" required><br>
+
+  <label for="age">Age</label>
+  <input type="text" id="age" name="age" required><br>
+
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" required> <br>
+
+  <label for="phone">Phone</label>
+  <input type="phone" id="phone" name="phone" required>
+
+<!-- Profile pic -->
+<label for="profilePic">Profile Picture</label>
+<input type="file" id="profilePic" name="profilePic" accept="image">
+
+
+
+</fieldset>
+
+<!-- 2nd fieldset Education-->
+ <fieldset>
+
+  <legend>Education</legend>
+  <label for="education">Education</label><br>
+  <textarea name="education" id="education" rows="4"></textarea> <br>
+
+ </fieldset>
+
+</fieldset>
+
+<!-- 3rd fieldset Experience-->
+ <fieldset>
+
+  <legend>Experience</legend>
+  <label for="experience">Experience</label><br>
+  <textarea name="education" id="experience" rows="4"></textarea> <br>
+
+ </fieldset>
+ <!-- 4th fieldset Skills-->
+ <fieldset>
+
+  <legend>Skills</legend>
+  <label for="skills">Skills</label><br>
+  <textarea name="skills" id="skills" rows="4"></textarea> <br>
+
+ </fieldset>
+ <button type="submit">Submit Resume</button>
+  </form>
+  <div id="resumeOutput">
+    <!-- resume will be generated below -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
